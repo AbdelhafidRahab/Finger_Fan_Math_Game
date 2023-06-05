@@ -351,27 +351,27 @@ function createFingersElement(param) {
     let elem = document.createElement("img");
     switch (param) {
         case 0:{
-            elem.src = "img/zero-fingers.png";
+            elem.src = "img/zero-fingers.jpg";
             elem.classList.add("0");
         }break;
         case 1:{
-            elem.src = "img/one-finger.png";
+            elem.src = "img/one-finger.jpg";
             elem.classList.add("1");
         }break;
         case 2:{
-            elem.src = "img/two-fingers.png";
+            elem.src = "img/two-fingers.jpg";
             elem.classList.add("2");
         }break;
         case 3:{
-            elem.src = "img/three-fingers.png";
+            elem.src = "img/three-fingers.jpg";
             elem.classList.add("3");
         }break;
         case 4:{
-            elem.src = "img/four-fingers.png";
+            elem.src = "img/four-fingers.jpg";
             elem.classList.add("4");
         }break;
         case 5:{
-            elem.src = "img/five-fingers.png";
+            elem.src = "img/five-fingers.jpg";
             elem.classList.add("5");
         }break;
         default:
