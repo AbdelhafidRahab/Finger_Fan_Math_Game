@@ -95,7 +95,7 @@ body section.home h4 {
 body section.home img.in-title {
     position: absolute;
     height: 300px;
-    right: 42%;
+    right: 41%;
     top: 6%;
     transform: rotate(324deg);
 }
