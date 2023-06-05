@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Finger Fan Math</title>
+        <link href="img/browser-window-icon.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/finger_fun_math.css" />
+    </head>
+    <body>
+        <audio id="on-play" loop>
+            <source src="sounds/on-play.mp3" type="audio/mp3">
+        </audio>
+        <div class="gohome">
+            <a href=""><i class="fa-solid fa-house-user"></i>Home</a>
+        </div>
+        <section class="home">
+            <h1>Finger </br>Fan Math</h1>
+            <h4>Best Score: 0</h4>
+            <img class="in-title" src="img/three-fingers.png">
+            <div class="play">
+                <img class="play" src="img/direction-finger.png">
+                <span>play</span>
+            </div>
+        </section>
+        <section class="game">
+            <div class="scores">
+                <div class="best-score">Best Score : <span>0</span></div>
+                <div class="currently-score">Currently Score : <span>0</span></div>
+            </div>
+            <div class="quit"><i class="fa-solid fa-right-from-bracket"></i> Quit</div>
+            <div class="timer">Timer : <span>10</span></div>
+            <div class="fingers-container"></div>
+            <div class="results-container"></div>
+            <audio id="correct-answer">
+                <source src="sounds/correct-answer.mp3" type="audio/mp3">
+            </audio>
+            <audio id="wrong-answer">
+                <source src="sounds/wrong-answer.mp3" type="audio/mp3">
+            </audio>
+            <audio id="time-out">
+                <source src="sounds/time-out.mp3" type="audio/mp3">
+            </audio>
+            <audio id="winning">
+                <source src="sounds/winning.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <script type="text/javascript" src="js/confetti-js-master/dist/index.min.js"></script>
+        <script type="text/javascript" src="js/finger_fan_math.js"></script>
+    </body>
+</html>

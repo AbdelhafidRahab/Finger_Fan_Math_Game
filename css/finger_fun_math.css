@@ -1,0 +1,212 @@
+/*Start Global Rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+/*End Global Rules*/
+/*Start Variable*/
+:root {
+    --color-1: #F2FEDC;
+    --color-2: #FAE06F;
+    --color-3: #3A3C3F;
+    --color-4: #00AC90;
+    --color-5: #009891;
+}
+/*End Variable*/
+/*Start Body*/
+body {
+    height: 100vh;
+    background-color: var(--color-1);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    transition: transform 1s ease 0s;
+}
+body section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    position: relative;
+}
+.overlay {
+    position: fixed;
+	background-color: var(--color-1);
+	left: 100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.end-game-box {
+    position: fixed;
+    left: 150%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-1);
+    border : 3px solid var(--color-3);
+    padding: 20px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.end-game-box p {
+    font-size: 30px;
+}
+.end-game-box p span {
+    color: var(--color-4);
+}
+.end-game-box div {
+    font-size: 100px;
+    margin: 20px;
+}
+.end-game-box div I {
+    color: gold;
+}
+#my-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1002;
+}
+/*End Body*/
+/* Start home */
+body section.home {
+    padding: 100px 0 0 280px;
+    font-size: 45px;
+}
+body section.home h1 {
+    margin-bottom: 10px;
+    opacity: .8;
+}
+body section.home h4 {
+    opacity: .7;
+    font-size: 30px;
+}
+body section.home img.in-title {
+    position: absolute;
+    height: 300px;
+    right: 42%;
+    top: 6%;
+    transform: rotate(324deg);
+}
+body section.home .play {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    cursor: pointer;
+}
+body section.home .play img.play {
+    height: 100px;
+}
+body section.home .play span {
+    position: absolute;
+    top: -67px;
+    right: -27px;
+    opacity: .8;
+}
+body .gohome {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 50px;
+    z-index: 5000;
+}
+body .gohome a {
+    color: var(--color-3);
+    text-decoration: none;
+}
+body .gohome a i {
+    margin-right: 15px;
+}
+/* End home */
+/* Start game */
+body section.game {
+    padding-top: 20px;
+    align-items: center;
+}
+body section.game .scores {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+body section.game .scores::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 110%;
+    background-color: var(--color-3);
+    right: 55%;
+}
+body section.game .scores .currently-score span {
+    color: var(--color-4);
+}
+body section.game .scores .best-score span
+,body section.game .scores .currently-score span {
+    font-weight: initial;
+}
+body section.game .quit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+body section.game .timer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+body section.game .timer span {
+    font-weight: initial;
+}
+body section.game .fingers-container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body section.game .fingers-container img {
+    height: 200px;
+}
+body section.game .fingers-container .addition-operation {
+    font-size: 130px;
+    opacity: .8;
+}
+body section.game .results-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+body section.game .results-container .result-element {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 3px solid var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+body section.game .results-container .result-element:hover {
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
+/* End game */
